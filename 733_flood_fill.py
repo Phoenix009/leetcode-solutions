@@ -1,7 +1,7 @@
 class Solution:
     def floodFill(
         self, image: List[List[int]], sr: int, sc: int, color: int
-    ) -> List[List[int]]:
+        ) -> List[List[int]]:
         from collections import deque
 
         color_to_fill = image[sr][sc]
@@ -25,3 +25,4 @@ class Solution:
                 if image[new_x][new_y] == color_to_fill:
                     queue.append((new_x, new_y))
         return image
+
